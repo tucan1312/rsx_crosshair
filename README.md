@@ -1,4 +1,4 @@
-<img width="885" height="978" alt="image" src="https://github.com/user-attachments/assets/21f53014-aee6-40a4-b663-bb07f931cf58" />
+
 # RSX Crosshair
 A lightweight RedM crosshair selector resource with a clean NUI menu and 12 selectable crosshair styles. Players can open the menu with a configurable command, choose their preferred crosshair, and display it while aiming.
 
@@ -28,3 +28,4 @@ ensure rsx_crosshair
 refresh
 ensure rsx_crosshair
 ```
+<img width="885" height="978" alt="image" src="https://github.com/user-attachments/assets/21f53014-aee6-40a4-b663-bb07f931cf58" />
