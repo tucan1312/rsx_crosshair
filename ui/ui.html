@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+
+<div id="crosshair-overlay">
+    <img src="./images/crosshair1.png" class="type1 crosshair-overlay">
+    <img src="./images/crosshair2.png" class="type2 crosshair-overlay">
+    <img src="./images/crosshair3.png" class="type3 crosshair-overlay">
+    <img src="./images/crosshair4.png" class="type4 crosshair-overlay">
+    <img src="./images/crosshair5.png" class="type5 crosshair-overlay">
+    <img src="./images/crosshair6.png" class="type6 crosshair-overlay">
+    <img src="./images/crosshair7.png" class="type7 crosshair-overlay">
+    <img src="./images/crosshair8.png" class="type8 crosshair-overlay">
+    <img src="./images/crosshair9.png" class="type9 crosshair-overlay">
+    <img src="./images/crosshair10.png" class="type10 crosshair-overlay">
+    <img src="./images/crosshair11.png" class="type11 crosshair-overlay">
+    <img src="./images/crosshair12.png" class="type12 crosshair-overlay">
+</div>
+
+
+<body>
+    <div id="wrap">
+        <a href="http://rsx_crosshair/closemenu" class="closeBtn">
+            <i class="fas fa-times"></i>
+        </a>
+
+
+
+        <div class="header">
+            <h1>CROSSHAIR SELECTOR</h1>
+            <p>CHOOSE YOUR PREFERRED RETICLE STYLE AND COLOR</p>
+        </div>
+
+        <div class="color-palette">
+            <div class="color-btn white" onclick="setCrosshairColor('white')"></div>
+            <div class="color-btn red" onclick="setCrosshairColor('red')"></div>
+            <div class="color-btn green" onclick="setCrosshairColor('green')"></div>
+            <div class="color-btn blue" onclick="setCrosshairColor('blue')"></div>
+            <div class="color-btn yellow" onclick="setCrosshairColor('yellow')"></div>
+            <div class="color-btn pink" onclick="setCrosshairColor('pink')"></div>
+            <div class="color-btn purple" onclick="setCrosshairColor('purple')"></div>
+            <div class="color-btn cyan" onclick="setCrosshairColor('cyan')"></div>
+            <div class="color-btn orange" onclick="setCrosshairColor('orange')"></div>
+            <div class="color-btn black" onclick="setCrosshairColor('black')"></div>
+        </div>
+
+        <div id="select-crosshair">
+            <div id="crosshairs">
+                <script>
+                    for (let i = 1; i <= 12; i++) {
+                        document.write(`
+                            <div class="cross-card">
+                                <div class="preview">
+                                    <img src="./images/crosshair${i}.png" />
+                                </div>
+                                <span>Crosshair ${i}</span>
+                                <a href="http://rsx_crosshair/selected${i}" class="useBtn">
+                                    Use Crosshair
+                                </a>
+                            </div>
+                        `)
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <script src="nui://game/ui/jquery.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
